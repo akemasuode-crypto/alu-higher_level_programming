@@ -1,17 +1,3 @@
 #!/bin/bash
-# 0-run: runs the Python script defined in $PYFILE
-
-# Check if PYFILE is set
-if [ -z "$PYFILE" ]; then
-    echo "Error: PYFILE is not set. Please set it to the Python script path."
-    exit 1
-fi
-
-# Check if the file exists
-if [ ! -f "$PYFILE" ]; then
-    echo "Error: File '$PYFILE' does not exist."
-    exit 1
-   fi
-
-# Run the Python script
-python3 "$PYFILE"
+# 0-run: runs main.py
+python3 main.py
