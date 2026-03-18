@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-def only_diff_elements(set_1, set_2):
-    return set_1 ^ set_2
+def number_keys(a_dictionary):
+    sum_keys = 0
+    for key, value in a_dictionary.items():
+        sum_keys += 1
+
+    return int(sum_keys)
